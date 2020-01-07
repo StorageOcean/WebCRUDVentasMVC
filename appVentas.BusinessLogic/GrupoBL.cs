@@ -7,7 +7,7 @@ namespace appVentas.BusinessLogic
     public class GrupoBL
     {
         private GrupoDA grupoDA;
-
+	// COMENTARIO
         public GrupoBL()
         {
             this.grupoDA = new GrupoDA();
