@@ -1,0 +1,7 @@
+E:\CURSOS\BACKEND.NETCORE\WebCRUDVentasMVC\appVentas.BusinessEntities\bin\Debug\appVentas.BusinessEntities.dll
+E:\CURSOS\BACKEND.NETCORE\WebCRUDVentasMVC\appVentas.BusinessEntities\bin\Debug\appVentas.BusinessEntities.pdb
+E:\CURSOS\BACKEND.NETCORE\WebCRUDVentasMVC\appVentas.BusinessEntities\obj\Debug\appVentas.BusinessEntities.csproj.CoreCompileInputs.cache
+E:\CURSOS\BACKEND.NETCORE\WebCRUDVentasMVC\appVentas.BusinessEntities\obj\Debug\appVentas.BusinessEntities.dll
+E:\CURSOS\BACKEND.NETCORE\WebCRUDVentasMVC\appVentas.BusinessEntities\obj\Debug\appVentas.BusinessEntities.pdb
+E:\CURSOS\BACKEND.NETCORE\WebCRUDVentasMVC\appVentas.BusinessEntities\bin\Debug\appVentas.BusinessEntities.dll.CodeAnalysisLog.xml
+E:\CURSOS\BACKEND.NETCORE\WebCRUDVentasMVC\appVentas.BusinessEntities\bin\Debug\appVentas.BusinessEntities.dll.lastcodeanalysissucceeded

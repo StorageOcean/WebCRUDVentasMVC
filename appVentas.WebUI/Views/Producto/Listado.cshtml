@@ -1,0 +1,39 @@
+﻿@model appVentas.WebUI.ViewsModels.ProductoViewModel
+@{
+    ViewBag.Title = "Listado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Producto CRUD Operations</h2>
+@Html.ActionLink("Nuevo Producto", "Nuevo", new { }, new { @class = "btn btn-primary pull-right" })
+<br><br>
+<table class="table  table-striped  table-hover">
+    <tr>
+        <th>Codigo</th>
+        <th>Producto</th>
+        @*<th>Grupo</th>
+            <th>Linea</th>*@
+        <th>Marca</th>
+        <th>Costo Prom.</th>
+        <th>Precio Vta.</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model.lstproductoViewModel)
+    {
+        <tr>
+            <td>@item.CodProd.Trim()</td>
+            <td>@item.NomProd.Trim()</td>
+            @*<td>@item.CodGrup.Trim()</td>
+                <td>@item.CodLin.Trim()</td>*@
+            <td>@item.Marca.Trim()</td>
+            <td>@item.CosPromC</td>
+            <td>@item.PrecioVta</td>
+            <td>
+                <a class="btn btn-warning glyphicon glyphicon-edit" href="@Url.Action("Editar","Producto",new {idProducto=@item.CodProd})"></a>
+
+                <a class="btn btn-danger glyphicon glyphicon-trash" href="@Url.Action("EliminarProducto","Producto",new {idProducto=@item.CodProd})"></a>
+            </td>
+
+        </tr>
+    }
+</table>
+

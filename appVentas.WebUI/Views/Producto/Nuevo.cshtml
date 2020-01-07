@@ -1,0 +1,60 @@
+﻿@model appVentas.WebUI.ViewsModels.ProductoViewModel
+
+@{
+    ViewBag.Title = "Nuevo Producto";
+}
+
+<h2>NuevoProducto</h2>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    @using (Html.BeginForm("Guardar", "Producto", FormMethod.Post))
+                    {
+                        <div class="form-group">
+                            <label>Codigo</label>
+                            @Html.TextBoxFor(m => m.CodProd, new { @class = "form-control" })
+                        </div>
+                        <div class="form-group">
+                            <label>Producto</label>
+                            @Html.TextBoxFor(m => m.NomProd, new { @class = "form-control" })
+                        </div>
+                        <div class="form-group">
+                            <label>Grupo</label>
+                            @Html.DropDownListFor(model => model.CodGrup, new SelectList(Model.lstgrupoViewModel, "CodGrup", "NomGrup"), "Choose... ", new { @class = "form-control" })
+                        </div>
+                        <div class="form-group">
+                            <label>Linea</label>
+                            @Html.DropDownListFor(model => model.CodLin, new SelectList(Model.lstlineaViewModel, "CodLin", "NomLin"), "Choose... ", new { @class = "form-control" })
+                        </div>
+                        <div class="form-group">
+                            <label>Marca</label>
+                            @Html.TextBoxFor(m => m.Marca, new { @class = "form-control" })
+                        </div>
+
+                        <div class="form-group">
+                            <label>Costo</label>
+                            @Html.TextBoxFor(m => m.CosPromC, new { @class = "form-control" })
+                        </div>
+
+                        <div class="form-group">
+                            <label>Precio Venta</label>
+                            @Html.TextBoxFor(m => m.PrecioVta, new { @class = "form-control" })
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" name="Guardar" value="Guardar" class="btn btn-success" />
+                            @if (ViewBag.message != "")
+                            {
+                                <span class="badge badge-danger">@ViewBag.message</span>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
